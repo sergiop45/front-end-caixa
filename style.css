@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+
+}
+body {
+    margin: 0;
+}
+hr {
+    width: 100%;
+    margin: 0 auto;
+}
+header {
+    background-color: rgb(0, 114, 187);
+    height: 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 60px;
+    padding-left: 40px;
+}
+header a {
+    padding: 10px 120px;
+    font-size: 11px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: -75px;
+}
+
+/*Primeiro conteudo */
+
+.primeiro-conteudo {
+    display: flex;
+    background-color: rgb(0, 48, 130);
+    height: 398px;
+    width: 100%;
+}
+.primeiro-conteudo div {
+    color: #ffffff;
+    text-align: start;
+    width: 30%;
+    margin-left: -115px;
+    padding-top: 16px;
+}
+.primeiro-conteudo div h1 {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.primeiro-conteudo div p {
+    font-size: 13px;
+    margin-bottom: 30px;
+    margin-right: 28px;
+}
+.btn {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: rgb(252, 164, 19);
+    padding: 15px 21px;
+    border: 0.1px solid black;
+    border-radius: 4px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    float: right;
+    cursor: pointer;
+    width: 120px;
+}
+.primeiro-conteudo div hr {
+    margin-top: 100px;
+    width: 100%;
+    border: none;
+    border-bottom: 0.5px solid rgb(83, 146, 190);
+}
+
+.primeiro-conteudo form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f6; opacity: 0.8;
+    color: #333333;
+    text-align: start;
+    width: 30%;
+    margin-left: 40px;
+    margin-bottom: 44px;
+    margin-top: 16px;
+    border-radius: 4px;
+    height: auto;
+}
+.primeiro-conteudo form p {
+    font-size: 14px;
+    margin-top: 28px;
+    margin-left: 14px;
+}
+.primeiro-conteudo form h1 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.primeiro-conteudo .inputs {
+    width: 100%;
+    color: #333333;
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.primeiro-conteudo .inputs label input[type="text"] {
+    padding: 10px 10px;
+    opacity: 1;
+    width: 87%;
+    border: none;
+    border-radius: 4px;
+    box-shadow: #333333 0px 0px 1px 0px;
+    margin-bottom: 40px;
+}
+.primeiro-conteudo .inputs .inputs-select {
+    display: flex;
+    margin-left: 1px;
+    padding: 0;
+    margin-top: -20px;
+}
+.primeiro-conteudo .inputs .inputs-select p{
+    margin-left: 3px;
+    margin-top: 0;
+    font-size: 14px;
+}
+.primeiro-conteudo form button {
+    margin-left: 150px;
+}
+
+/*segunda conteudo*/
+
+.segundo-conteudo {
+    background-color: #ffffff;
+    display: flex;
+    padding: 85px 25px 45px 25px;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.segundo-conteudo li a {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 13px;
+    font-weight: bold;
+}
+.segundo-conteudo li a:hover {
+    color: #333333;
+}
+
+/*terceiro conteudo*/
+.terceiro-conteudo {
+    margin-left: 43px;
+}
+
+.terceiro-conteudo h1 {
+    margin-top: 75px;
+    color: #1f2a47;
+    font-size: 40px;
+    margin-left: -3px;
+}
+.terceiro-conteudo p {
+    color: #1f2a47;
+    font-size:14px;
+    margin-top: 6px;
+}
+.terceiro-conteudo p a {
+    color: #2a6496;
+    text-decoration: none;
+}
+.terceiro-conteudo hr {
+    margin-top: 25px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #f4f4f6;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding-bottom: 15px;
+}
+footer li a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 14px;
+}
+.footer-esquerdo {
+    margin-left: 30px;
+    margin-top: -15px;
+}
+.footer-direito {
+    margin: 20px 0px 30px 15px;
+    display: flex;
+    align-items: center;
+}
+.footer-direito li {
+    margin-right: 14px;
+}
+
+/*responsividade*/
+
+@media (max-width: 700px) {
+    .segundo-conteudo {
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .primeiro-conteudo div {
+        display: none;
+    }
+    .primeiro-conteudo  {
+        position: relative;
+    }
+    .primeiro-conteudo form {
+        position: absolute;
+        right: 30px;
+        width: 45%;
+    }
+    .primeiro-conteudo form button {
+        margin-left: 0;
+    }
+}
